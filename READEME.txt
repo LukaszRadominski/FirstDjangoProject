@@ -4,14 +4,40 @@ This application allows you to create a database of cars and perform simple data
 
 In this READEME.txt you will find each step to crete such project. Lets begin:
 
+
+
+
 1. Create virtual environment 
+
 2. pip install cx_Oracle
+
 3. pip install django
+
 4. pip freeze ( check if everything is ok)
 
 
 CREATE PROJECT + APP 
 5.1 django-admin startproject  <project name> np:  CarSalesProject .  "." dot is important if you dont want to create a subfolder with the same name and thus not change the structure during publication
+
 5.1.1. python manage.py runserver (check if everything is ok)
 
 5.2 python manage.py startapp  <project name> np:   CarSales
+
+5.3  Include app to our project  > For this, in settings.py, add our new app CarSales (case sensitive) to INSTALLED_APPS list as below. 
+
+
+
+Loading First HTML Page
+6.1 Html files should be placed within a folder named templates. Create this folder in our CarSales app. 
+
+6.2 Add a new html file carslist.html, inside templates folder. 
+
+6.3 We should have 2 urls.py, one inside, project folder and one inside app folder. If not available, create these files. urls.py in project folder adds a reference to the app urls.py.
+
+6.4 In app (CarSales) urls.py we define the urlpatterns for this module.
+
+6.5 In project (CarSalesProject) urls.py - 
+ +  add "include" to import 
+ +  add path('', include('CarSales.urls')), to urlpatterns               ## urls.py in project folder adds a reference to the app urls.py.
+
+6.6 In views.py we define the htmls to render for each route. 
