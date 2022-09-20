@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'CarSales'  # dodane w kroku 5.3 READEME.txt
 ]
 
 MIDDLEWARE = [

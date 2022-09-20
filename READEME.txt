@@ -1,0 +1,17 @@
+It is my private sample Django project with Oracle Database, based on https://absolutecodeworks.com/python-django-crud-sample-with-oracle 
+ 
+This application allows you to create a database of cars and perform simple data operations
+
+In this READEME.txt you will find each step to crete such project. Lets begin:
+
+1. Create virtual environment 
+2. pip install cx_Oracle
+3. pip install django
+4. pip freeze ( check if everything is ok)
+
+
+CREATE PROJECT + APP 
+5.1 django-admin startproject  <project name> np:  CarSalesProject .  "." dot is important if you dont want to create a subfolder with the same name and thus not change the structure during publication
+5.1.1. python manage.py runserver (check if everything is ok)
+
+5.2 python manage.py startapp  <project name> np:   CarSales
