@@ -28,16 +28,47 @@ CREATE PROJECT + APP
 
 
 Loading First HTML Page
-6.1 Html files should be placed within a folder named templates. Create this folder in our CarSales app. 
+6.1 < CarSales folder > Html files should be placed within a folder named templates. Create this folder in our CarSales app. 
 
-6.2 Add a new html file carslist.html, inside templates folder. 
+6.2  < CarSales folder > Add a new html file carslist.html, inside templates folder. 
 
-6.3 We should have 2 urls.py, one inside, project folder and one inside app folder. If not available, create these files. urls.py in project folder adds a reference to the app urls.py.
+6.3 < CarSales  and CarSalesProject folder > We should have 2 urls.py, one inside project folder and one inside app folder. If not available, create these files. urls.py in project folder adds a reference to the app urls.py.
 
-6.4 In app (CarSales) urls.py we define the urlpatterns for this module.
+6.4 < CarSales folder > In app (CarSales) urls.py we define the urlpatterns for this module.
 
-6.5 In project (CarSalesProject) urls.py - 
+6.5 < CarSalesProject folder > In project (CarSalesProject) urls.py - 
  +  add "include" to import 
  +  add path('', include('CarSales.urls')), to urlpatterns               ## urls.py in project folder adds a reference to the app urls.py.
 
-6.6 In views.py we define the htmls to render for each route. 
+6.6 < CarSales folder > In views.py we define the htmls to render for each route. 
+
+
+Oracle Database Setup
+
+7.1 Connect to your Oracle database. 
+
+## Oracledatabase 
+ 1. installation guide: https://www.geeksforgeeks.org/how-to-install-sqlplus-on-windows/
+ 1.1.   download:       https://www.filehorse.com/download-oracle-database-express/download/
+
+ 2. Database doc:       https://docs.oracle.com/cd/E18283_01/appdev.112/e10766/toc.htm 
+
+ 3.How to connect:      https://docs.oracle.com/cd/E18283_01/appdev.112/e10766/tdddg_connecting.htm
+
+[ only through a client program, such as SQL*Plus or SQL Developer]
+
+
+## SQL*Puls  
+ links:                                 https://stackoverflow.com/questions/32296703/how-to-download-and-setup-sqlplus-for-running-sql-commands
+ download SQL*Plus - instant:           https://www.oracle.com/database/technologies/instant-client/downloads.html
+ SQL*plus Guide:                        https://docs.oracle.com/cd/B19306_01/server.102/b14357/qstart.htm
+ SQL Developer - instalation:           https://docs.oracle.com/cd/E18283_01/doc.112/e12152/intro.htm#RPTUG10100
+
+
+## SQL Developer 
+ install download :                           https://www.oracle.com/database/sqldeveloper/
+ SQL Developer - instalation giude:           https://docs.oracle.com/cd/E18283_01/doc.112/e12152/intro.htm#RPTUG10100
+
+3.1 for SQL Developer : step by step > CREATE CONNECTION DO DATABASE    https://www.oracle.com/in/database/technologies/howto-connect-xe.html
+
+
